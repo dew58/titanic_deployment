@@ -33,7 +33,7 @@ if st.button("توقع النجاه"):
            "Age" : age ,
            "SibSp" : sibsp ,
            "Parch" : parch ,
-           "Fare" : fare
+           "Fare" : fare ,
            "Embarked" : embarked ,
            }
   input_df = pd.DataFrame(input)
