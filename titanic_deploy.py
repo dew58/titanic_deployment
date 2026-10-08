@@ -34,7 +34,7 @@ if st.button("توقع النجاه"):
            "SibSp" : sibsp ,
            "Parch" : parch ,
            "Fare" : fare ,
-           "Embarked" : embarked ,
+           "Embarked" : embarked 
            }
   input_df = pd.DataFrame(input)
   input_df.replace({'Sex':{'male':0,'female':1}, 'Embarked':{'S':0,'C':1,'Q':2}}, inplace=True)
