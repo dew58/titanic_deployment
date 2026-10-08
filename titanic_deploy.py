@@ -28,13 +28,13 @@ parch = st.number_input("parents/children" , min_value = 0 , max_value = 10)
 fare = st.number_input("fare" , min_value = 0 )
 
 if st.button("توقع النجاه"):
-  input = {"Pclass" : pclass ,
-           "Sex" : sex ,
-           "Age" : age ,
-           "SibSp" : sibsp ,
-           "Parch" : parch ,
-           "Fare" : fare ,
-           "Embarked" : embarked 
+  input = {"Pclass" : [pclass] ,
+           "Sex" : [sex] ,
+           "Age" : [age] ,
+           "SibSp" : [sibsp] ,
+           "Parch" : [parch] ,
+           "Fare" : [fare] ,
+           "Embarked" : [embarked] 
            }
   input_df = pd.DataFrame(input)
   input_df.replace({'Sex':{'male':0,'female':1}, 'Embarked':{'S':0,'C':1,'Q':2}}, inplace=True)
